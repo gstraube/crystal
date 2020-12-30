@@ -25,6 +25,9 @@ jobs:
       - name: Test
         run: bin/ci build
 
+      - name: Create a Release
+        uses: actions/create-release@v1
+
   test_linux_32:
     env:
       ARCH: i386
